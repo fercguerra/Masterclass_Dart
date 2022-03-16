@@ -9,6 +9,7 @@ main() {
   var isRunning = true;
 
   while (isRunning) {
+    print("\x1B[2J\x1B[0;0H");
     var input = stdin.readLineSync();
 
     if (input == 'add') {
